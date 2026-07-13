@@ -7,8 +7,10 @@ function player(button,numero){
     let td = button.parentElement
     
     if (jogadas % 2 == 0){
+        td.style.color = "red";
         td.innerHTML = 'X'
     }else{
+        td.style.color = "blue";
         td.innerHTML = 'O'
     }
     if (numero <= 2){
